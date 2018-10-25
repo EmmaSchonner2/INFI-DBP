@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS Temperaturmessung;
+
+
+
+USE Temperaturmessung;
+
+
+
+CREATE TABLE IF NOT EXISTS temperature(
+
+   date DATETIME NOT NULL PRIMARY KEY,
+
+   temp FLOAT NOT NULL
+
+);
