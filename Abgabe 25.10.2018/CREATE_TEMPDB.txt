@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS temperature(
+   mydate DATETIME NOT NULL PRIMARY KEY,
+   temp REAL NOT NULL
+);
