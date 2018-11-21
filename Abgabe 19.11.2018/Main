@@ -1,0 +1,56 @@
+import java.io.IOException;
+import java.sql.*;
+import java.util.Scanner;
+
+public class Main {
+	
+	// Input menu
+	public static char inputMenu() throws IOException{		
+		System.out.println("a ... Ausgabe Flüge pro Monat letztes Jahr");
+		System.out.println("b ... Visualisierung Flüge pro Monat letztes Jahr");
+		System.out.println("c ... Ausgabe Flüge eines Monats letztes Jahr/letzte Jahre");
+		System.out.println("Ihre Wahl: ");
+		@SuppressWarnings("resource")
+		Scanner scan = new Scanner(System.in);
+		char c = scan.next(".").charAt(0);
+		return c;
+	}
+
+	// Input month
+	public static int inputMonth() throws IOException{		
+		System.out.println("Zahl Ihres gewünschten Monats: ");
+		@SuppressWarnings("resource")
+		Scanner scan = new Scanner(System.in);
+		int m = Integer.parseInt(scan.next());
+		return m;
+	}
+	
+	public static void main(String[] args) throws SQLException {
+		// TODO Auto-generated method stub
+		DBManager db = new DBManager();
+		char choice;
+		int month;
+		
+		try {
+			do {
+				choice = inputMenu();
+				switch(choice) {
+				case 'a':
+					db.getFlightsPerMonthInAYear();
+					break;
+				case 'b':
+					db.plotFlightPerMonthInAYear();
+					break;
+				case 'c':
+					month = inputMonth();
+					db.getFlightsPerMonth(month);
+					break;
+				}
+			}while(true);
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}
