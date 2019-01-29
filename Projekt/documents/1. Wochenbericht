@@ -1,0 +1,16 @@
+1. Wochenbericht:
+=================
+21.01.2019 --- 27.01.2019
+
+
+24.01.2019:
+  - Menü in der Main
+  - getAllJobs()
+  - getAllDepartments() 
+  - sqls bei visualizeLastName()
+  - Recherche zu CSV 
+  - visualizeAge()
+  - visualizeLastName()
+  
+25.01.2019:
+  - Aktualisieren des Pflichtenheftes
