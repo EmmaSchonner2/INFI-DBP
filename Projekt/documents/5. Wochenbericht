@@ -1,0 +1,11 @@
+5. Wochenbericht:
+=================
+18.02.2019 --- 24.02.2019
+
+
+21.02.2019:
+  - getMinEmpNo()
+  - getName()
+  - getRandomDate()
+  - getRandomPerson()
+  - Recherche wegen Probleme mit Datumsspeicherung
