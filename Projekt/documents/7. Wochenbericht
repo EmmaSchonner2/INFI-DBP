@@ -1,0 +1,9 @@
+7. Wochenbericht:
+=================
+04.03.2019 --- 10.03.2019
+
+
+07.03.2019:
+  - insertRandomPerson()
+  - Anpassung der Methode getName()
+  - Nullpunktverschiebung (mit setLowerBound)
